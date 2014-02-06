@@ -1,0 +1,85 @@
+/* line 3, ../sass/theme.scss */
+body {
+  background-image: url("../../images/portfolio_bg_1.png");
+}
+
+/* line 9, ../sass/theme.scss */
+.center {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 14, ../sass/theme.scss */
+.f_s_1 {
+  font-size: 1.1em;
+}
+
+/* line 15, ../sass/theme.scss */
+.f_s_2 {
+  font-size: 1.21em;
+}
+
+/* line 16, ../sass/theme.scss */
+.f_s_3 {
+  font-size: 1.331em;
+}
+
+/* line 17, ../sass/theme.scss */
+.f_s_4 {
+  font-size: 1.4641em;
+}
+
+/* line 18, ../sass/theme.scss */
+.f_s_5 {
+  font-size: 1.61051em;
+}
+
+/* line 19, ../sass/theme.scss */
+.f_s_6 {
+  font-size: 1.77156em;
+}
+
+/* line 20, ../sass/theme.scss */
+.f_s_7 {
+  font-size: 1.94872em;
+}
+
+/* line 21, ../sass/theme.scss */
+.f_s_8 {
+  font-size: 2.14359em;
+}
+
+/* line 22, ../sass/theme.scss */
+.f_s_9 {
+  font-size: 2.35795em;
+}
+
+/* line 23, ../sass/theme.scss */
+.f_s_10 {
+  font-size: 2.59374em;
+}
+
+/* line 24, ../sass/theme.scss */
+.f_s_11 {
+  font-size: 2.85312em;
+}
+
+/* line 25, ../sass/theme.scss */
+.f_s_12 {
+  font-size: 3.13843em;
+}
+
+/* line 26, ../sass/theme.scss */
+.f_s_13 {
+  font-size: 3.45227em;
+}
+
+/* line 27, ../sass/theme.scss */
+.f_s_14 {
+  font-size: 3.7975em;
+}
+
+/* line 28, ../sass/theme.scss */
+.f_s_15 {
+  font-size: 4.17725em;
+}

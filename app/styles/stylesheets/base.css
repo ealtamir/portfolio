@@ -1,0 +1,15 @@
+/* line 1, ../sass/base.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 4, ../sass/base.scss */
+body {
+  font-size: 62.5%;
+  line-height: 1.5em;
+}
+
+/* line 8, ../sass/base.scss */
+h6, h5, h4, h3, h2, h1 {
+  font-size: inherit;
+}
