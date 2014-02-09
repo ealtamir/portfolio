@@ -1,85 +1,132 @@
-/* line 3, ../sass/theme.scss */
+/* line 6, ../sass/theme.scss */
 body {
-  background-image: url("../../images/portfolio_bg_1.png");
+  background-color: #191919;
+  font-family: 'Lato', sans-serif;
 }
 
-/* line 9, ../sass/theme.scss */
+/* line 13, ../sass/theme.scss */
+#personal-information {
+  background-color: rgba(235, 235, 235, 0.1);
+}
+
+/* line 16, ../sass/theme.scss */
+#name {
+  color: #0c7bf2;
+}
+
+/* line 19, ../sass/theme.scss */
+#title {
+  color: #09b853;
+}
+
+/* line 22, ../sass/theme.scss */
+.text p, #mail {
+  color: #666666;
+}
+/* line 24, ../sass/theme.scss */
+.text p .ion-ios7-email, #mail .ion-ios7-email {
+  color: #7f7f7f;
+}
+/* line 26, ../sass/theme.scss */
+.text p .ion-ios7-email:hover, #mail .ion-ios7-email:hover {
+  color: #a5a5a5;
+}
+/* line 30, ../sass/theme.scss */
+.text p .ion-ios7-minus-empty, #mail .ion-ios7-minus-empty {
+  color: #444444;
+}
+
+/* line 35, ../sass/theme.scss */
+#linkedin, #github, #twitter {
+  color: #7b898e;
+}
+/* line 37, ../sass/theme.scss */
+#linkedin i:hover, #github i:hover, #twitter i:hover {
+  color: #b2babd;
+}
+
+/* line 41, ../sass/theme.scss */
+.arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 130%;
+}
+
+/* line 46, ../sass/theme.scss */
 .center {
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
 }
 
-/* line 14, ../sass/theme.scss */
+/* line 50, ../sass/theme.scss */
 .f_s_1 {
   font-size: 1.1em;
 }
 
-/* line 15, ../sass/theme.scss */
+/* line 51, ../sass/theme.scss */
 .f_s_2 {
   font-size: 1.21em;
 }
 
-/* line 16, ../sass/theme.scss */
+/* line 52, ../sass/theme.scss */
 .f_s_3 {
   font-size: 1.331em;
 }
 
-/* line 17, ../sass/theme.scss */
+/* line 53, ../sass/theme.scss */
 .f_s_4 {
   font-size: 1.4641em;
 }
 
-/* line 18, ../sass/theme.scss */
+/* line 54, ../sass/theme.scss */
 .f_s_5 {
   font-size: 1.61051em;
 }
 
-/* line 19, ../sass/theme.scss */
+/* line 55, ../sass/theme.scss */
 .f_s_6 {
   font-size: 1.77156em;
 }
 
-/* line 20, ../sass/theme.scss */
+/* line 56, ../sass/theme.scss */
 .f_s_7 {
   font-size: 1.94872em;
 }
 
-/* line 21, ../sass/theme.scss */
+/* line 57, ../sass/theme.scss */
 .f_s_8 {
   font-size: 2.14359em;
 }
 
-/* line 22, ../sass/theme.scss */
+/* line 58, ../sass/theme.scss */
 .f_s_9 {
   font-size: 2.35795em;
 }
 
-/* line 23, ../sass/theme.scss */
+/* line 59, ../sass/theme.scss */
 .f_s_10 {
   font-size: 2.59374em;
 }
 
-/* line 24, ../sass/theme.scss */
+/* line 60, ../sass/theme.scss */
 .f_s_11 {
   font-size: 2.85312em;
 }
 
-/* line 25, ../sass/theme.scss */
+/* line 61, ../sass/theme.scss */
 .f_s_12 {
   font-size: 3.13843em;
 }
 
-/* line 26, ../sass/theme.scss */
+/* line 62, ../sass/theme.scss */
 .f_s_13 {
   font-size: 3.45227em;
 }
 
-/* line 27, ../sass/theme.scss */
+/* line 63, ../sass/theme.scss */
 .f_s_14 {
   font-size: 3.7975em;
 }
 
-/* line 28, ../sass/theme.scss */
+/* line 64, ../sass/theme.scss */
 .f_s_15 {
   font-size: 4.17725em;
 }

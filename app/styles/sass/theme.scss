@@ -1,14 +1,50 @@
+@import "compass/css3/hyphenation";
 @import 'constants';
+
+$final_s_c : desaturate($social_c, 90%);
 
 body {
     background: {
-        image: url('../../images/portfolio_bg_1.png');
+        color: $bg_c;
+    }
+    font-family: 'Lato', sans-serif;
+}
+
+#personal-information {
+    background-color: hsla(0, 0, 92, 0.1);
+}
+#name {
+    color: $name_c;
+}
+#title {
+    color: $title_c;
+}
+.text p, #mail {
+    color: lighten($bg_c, 30%);
+    .ion-ios7-email {
+        color: lighten($bg_c, 40%);
+        &:hover {
+            color: lighten($bg_c, 55%);
+        }
+    }
+    .ion-ios7-minus-empty {
+        color: lighten($bg_c, 17%);
     }
 }
 
+#linkedin, #github, #twitter {
+    color: $final_s_c;
+    i:hover {
+        color: lighten($final_s_c, 20%);
+    }
+}
+.arial {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 130%;
+}
+
 .center {
-    width: 100%;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .f_s_1 { font-size: $f_s_1; }

@@ -1,0 +1,67 @@
+/* line 3, ../sass/module.scss */
+#personal-information {
+  height: 100%;
+  width: 300px;
+  float: right;
+}
+/* line 7, ../sass/module.scss */
+#personal-information > div:first-child {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* line 13, ../sass/module.scss */
+.social {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  margin: 10px 0;
+  width: 300px;
+  text-align: center;
+}
+/* line 20, ../sass/module.scss */
+.social > div {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  width: 32.33333%;
+}
+
+/* line 28, ../sass/module.scss */
+.description {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: inherit;
+  overflow: auto;
+  height: 100%;
+}
+/* line 35, ../sass/module.scss */
+.description .text {
+  overflow: scroll;
+  width: 70%;
+  margin: 0 auto;
+  padding: 65px 0;
+  height: inherit;
+  display: table;
+}
+/* line 43, ../sass/module.scss */
+.description .text div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 47, ../sass/module.scss */
+.description .bottom_space {
+  margin-bottom: 10px;
+}
+/* line 50, ../sass/module.scss */
+.description #mail {
+  width: 100%;
+  text-align: center;
+}
+/* line 53, ../sass/module.scss */
+.description #mail .ion-ios7-email {
+  margin: 0 15px;
+}

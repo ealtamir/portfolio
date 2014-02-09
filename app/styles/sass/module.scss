@@ -1,0 +1,57 @@
+@import 'constants';
+
+#personal-information {
+    height: 100%;
+    width: $personal_info_w;
+    float: right;
+    > div:first-child {
+        margin-top   :  10px;
+        margin-left  :  10px;
+        display : inline-block;
+    }
+}
+.social  {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    margin: 10px 0;
+    width: $personal_info_w;
+    text-align: center;
+    > div {
+        margin: 0;
+        padding: 0;
+        display : inline-block;
+        text-align: center;
+        width: 100% / $social_num - 1;
+    }
+}
+.description {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: inherit;
+    overflow: auto;
+    height: 100%;
+    .text {
+        overflow: scroll;
+        width: 70%;
+        margin: 0 auto;
+        padding: 65px 0;
+        height: inherit;
+        display: table;
+    }
+    .text div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .bottom_space {
+        margin-bottom: 10px;
+    }
+    #mail {
+        width: 100%;
+        text-align: center;
+        .ion-ios7-email {
+            margin: 0 15px;
+        }
+    }
+}

@@ -1,3 +1,16 @@
+//////////////// Dimensions
+$personal_info_w : 300px;
+
+//////////////// Colors
+$bg_c      :  #191919;
+$name_c    :  #0C7BF2;
+$title_c   :  darken(#0CF26D,  12%);
+$social_c  :  #0DBFFC;
+
+//////////////// Configuration
+$social_num  :  3;
+$offset      :  2;
+
 //////////////// Font Sizes
 $factor : 1 + 0.1;
 $f_s_1  : 1em * $factor;
