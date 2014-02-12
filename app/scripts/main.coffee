@@ -3,20 +3,9 @@
 
 require.config
   shim:
-    underscore:
-      exports: '_'
-    backbone:
-      deps: [
-        'underscore'
-        'jquery'
-      ]
-      exports: 'Backbone'
+    asEvented:
+      exports: 'asEvented'
   paths:
-    jquery: '../bower_components/jquery/jquery'
-    backbone: '../bower_components/backbone/backbone'
-    underscore: '../bower_components/underscore/underscore'
+    asEvented: '../bower_components/asEvented/asevented'
 
-require [
-  'backbone'
-], (Backbone) ->
-  Backbone.history.start()
+require ['./eventAggregator'], (eventAgg)->
