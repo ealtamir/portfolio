@@ -252,8 +252,13 @@ module.exports = function (grunt) {
                         '*.{ico,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/{,*/}*.*',
                     ]
+                },
+                {
+                    expand: true,
+                    flatten: true,
+                    src: ['<%= yeoman.app %>/styles/fonts/**'],
+                    dest: '<%= yeoman.dist %>/fonts',
                 }]
             }
         },
