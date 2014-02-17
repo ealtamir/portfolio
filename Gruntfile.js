@@ -22,7 +22,8 @@ module.exports = function (grunt) {
     // configurable paths
     var yeomanConfig = {
         app: 'app',
-        dist: 'dist'
+        dist: 'dist',
+        tmp_path: './tmp'
     };
 
     grunt.initConfig({
@@ -171,9 +172,9 @@ module.exports = function (grunt) {
                     optimize: 'none',
                     paths: {
                         'templates': '../../.tmp/scripts/templates',
-                        'jquery': '../../app/bower_components/jquery/jquery',
-                        'underscore': '../../app/bower_components/underscore/underscore',
-                        'backbone': '../../app/bower_components/backbone/backbone'
+                        //'jquery': '../../app/bower_components/jquery/jquery',
+                        //'underscore': '../../app/bower_components/underscore/underscore',
+                        //'backbone': '../../app/bower_components/backbone/backbone'
                     },
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
@@ -259,6 +260,14 @@ module.exports = function (grunt) {
                     flatten: true,
                     src: ['<%= yeoman.app %>/styles/fonts/**'],
                     dest: '<%= yeoman.dist %>/fonts',
+                }]
+            },
+            asevented: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['<%= yeoman.app %>/scripts/*.js'],
+                    dest: '<%= yeoman.app %>/../.tmp/scripts'
                 }]
             }
         },
@@ -372,6 +381,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'coffee',
+        'copy:asevented',
         'createDefaultTemplate',
         'jst',
         'useminPrepare',

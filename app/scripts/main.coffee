@@ -3,9 +3,9 @@
 
 require.config
   shim:
-    asEvented:
+    asevented:
       exports: 'asEvented'
   paths:
-    asEvented: '../bower_components/asEvented/asevented'
+    asevented: './'
 
-require ['./eventAggregator'], (eventAgg)->
+require ['./eventAggregator'], (eventAgg) ->
