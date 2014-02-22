@@ -1,8 +1,9 @@
 define [
+  'lodash'
   '../domHandler',
   '../eventAggregator',
   '../constants'
-], ($, eventAggregator, c) ->
+], (_, $, eventAggregator, c) ->
   class AbstractBlob
     blobIdCount: 0
 
@@ -19,7 +20,13 @@ define [
         null
 
     getPos: ->
-      [@x, @y]
+      { x: @x, y: @y }
+
+    getRad: ->
+      @radius
+
+    setRad: (radius) ->
+      @radius = radius
 
     listenTick: ->
       @listeningToTick = yes
@@ -35,3 +42,10 @@ define [
       count = @blobIdCount
       @blobIdCount += 1
       count
+
+    startTickListener: ->
+      eventAggregator.bind c.events.TICK, _.bind(@tickHandler, this)
+
+    tickHandler: ->
+      if @listeningToTick is yes
+        @tickAction()
