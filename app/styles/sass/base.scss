@@ -5,9 +5,10 @@ html {
     font-size: 100%;
 }
 body {
-    font-size       : 62.5%;
-    height          : 100%;
-    width           : 100%;
+    font-size  :  62.5%;
+    height     :  100%;
+    width      :  100%;
+    overflow   :  hidden;
 }
 h6, h5, h4, h3, h2, h1 {
     font-size: inherit;

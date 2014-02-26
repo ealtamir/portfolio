@@ -57,76 +57,82 @@ body {
 }
 
 /* line 50, ../sass/theme.scss */
+.blob {
+  /* color: darken($bg_c, 20%); */
+  color: #212121;
+}
+
+/* line 56, ../sass/theme.scss */
 .f_s_1 {
   font-size: 1.1em;
 }
 
-/* line 51, ../sass/theme.scss */
+/* line 57, ../sass/theme.scss */
 .f_s_2 {
   font-size: 1.21em;
 }
 
-/* line 52, ../sass/theme.scss */
+/* line 58, ../sass/theme.scss */
 .f_s_3 {
   font-size: 1.331em;
 }
 
-/* line 53, ../sass/theme.scss */
+/* line 59, ../sass/theme.scss */
 .f_s_4 {
   font-size: 1.4641em;
 }
 
-/* line 54, ../sass/theme.scss */
+/* line 60, ../sass/theme.scss */
 .f_s_5 {
   font-size: 1.61051em;
 }
 
-/* line 55, ../sass/theme.scss */
+/* line 61, ../sass/theme.scss */
 .f_s_6 {
   font-size: 1.77156em;
 }
 
-/* line 56, ../sass/theme.scss */
+/* line 62, ../sass/theme.scss */
 .f_s_7 {
   font-size: 1.94872em;
 }
 
-/* line 57, ../sass/theme.scss */
+/* line 63, ../sass/theme.scss */
 .f_s_8 {
   font-size: 2.14359em;
 }
 
-/* line 58, ../sass/theme.scss */
+/* line 64, ../sass/theme.scss */
 .f_s_9 {
   font-size: 2.35795em;
 }
 
-/* line 59, ../sass/theme.scss */
+/* line 65, ../sass/theme.scss */
 .f_s_10 {
   font-size: 2.59374em;
 }
 
-/* line 60, ../sass/theme.scss */
+/* line 66, ../sass/theme.scss */
 .f_s_11 {
   font-size: 2.85312em;
 }
 
-/* line 61, ../sass/theme.scss */
+/* line 67, ../sass/theme.scss */
 .f_s_12 {
   font-size: 3.13843em;
 }
 
-/* line 62, ../sass/theme.scss */
+/* line 68, ../sass/theme.scss */
 .f_s_13 {
   font-size: 3.45227em;
 }
 
-/* line 63, ../sass/theme.scss */
+/* line 69, ../sass/theme.scss */
 .f_s_14 {
   font-size: 3.7975em;
 }
 
-/* line 64, ../sass/theme.scss */
+/* line 70, ../sass/theme.scss */
 .f_s_15 {
   font-size: 4.17725em;
 }

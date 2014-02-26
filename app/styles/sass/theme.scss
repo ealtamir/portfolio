@@ -47,6 +47,12 @@ body {
     text-align: center;
 }
 
+.blob {
+    /* color: darken($bg_c, 20%); */
+    color: lighten($bg_c, 3%);
+
+}
+
 .f_s_1 { font-size: $f_s_1; }
 .f_s_2 { font-size: $f_s_2; }
 .f_s_3 { font-size: $f_s_3; }

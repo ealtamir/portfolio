@@ -9,9 +9,9 @@ define [
     renderList: []
 
     blobTemplate: _.template """
-      <div class="blob" id="blob-<%- id %>">
-        <i class="ion ion-record f_s_10"></i>
-      </div>
+      <span class="blob" id="blob-<%- id %>">
+        <i class="ion ion-record f_s_3"></i>
+      </span>
     """
 
     constructor: ->

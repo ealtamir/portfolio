@@ -71,3 +71,9 @@
 .description #mail .ion-ios7-email {
   margin: 0 15px;
 }
+
+/* line 64, ../sass/module.scss */
+.blob {
+  position: relative;
+  z-index: -5;
+}
