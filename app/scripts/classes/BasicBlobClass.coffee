@@ -18,14 +18,17 @@ define [
 
       eventAggregator.one(
         c.events.INITIALIZE_BLOBS,
-        _.bind(@initBlobs, @)
+        _.bind(@initBlob, @)
       )
 
-      renderer.addToRenderList @blobId, @getPos(), @getRad
+      @genTickWaitCount()
+
+      renderer.addToRenderList @blobId, @getPos(), @getRad()
 
     tickAction: ->
-      # Trigger green sock so that it moves the spot
-      null
+      if @reduceTickCount() is 0
+        console.log "Handled blob #{@blobId}."
 
-    initBlobs: ->
-      null
+    initBlob: ->
+      @listenTick()
+

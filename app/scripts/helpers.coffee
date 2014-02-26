@@ -6,7 +6,7 @@ define [], ->
 
   rand: (lowerBnd, upperBnd) ->
     if upperBnd > lowerBnd
-      result = Math.random() * (upperBnd - lowerBnd + 1)
+      result = Math.random() * (upperBnd - lowerBnd)
       Math.floor(result) + lowerBnd
     else
       console.log """

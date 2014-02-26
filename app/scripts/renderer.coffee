@@ -9,7 +9,7 @@ define [
     renderList: []
 
     blobTemplate: _.template """
-      <div id="blob-<%- id %>">
+      <div class="blob" id="blob-<%- id %>">
         <i class="ion ion-record f_s_10"></i>
       </div>
     """
@@ -22,17 +22,17 @@ define [
 
     addToRenderList: (id, point, radius) ->
       @renderList.push
-        html: blobTemplate(id: id)
+        html: @blobTemplate(id: id)
         pos: point
         rad: radius
         id: id
 
     addRenderListToHTML: ->
-      $blobs_zone = $(c.anchor.BLOB_SECTION)
+      $blobs_zone = $(c.html_anchors.BLOBS_SECTION)
       renderStr = ""
       (renderStr += blob.html + '\n') for blob in @renderList
 
-      console.log renderStr
+      console.dir $blobs_zone
 
       $blobs_zone.append renderStr
 

@@ -15,11 +15,11 @@ require.config
     lodash: '../bower_components/lodash/dist/lodash'
 
 require [
+  './eventMediator'
   './classes/Timer',
   './classes/Board',
   './constants'
 ],
-  (Timer, Board, c) ->
-    console.dir c
-    #timer = new Timer(c.TICK_TIME)
-    #board = new Board(c.NUM_OF_BLOBS)
+  (EventMediator, Timer, Board, c) ->
+    timer = new Timer(c.TICK_TIME)
+    board = new Board(c.NUM_OF_BLOBS)

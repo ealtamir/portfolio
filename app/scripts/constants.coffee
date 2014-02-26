@@ -1,13 +1,16 @@
 define [], ->
   {
     events:
-      TICK         :  'tick'
-      UPDATE_HTML  :  'update_html'
-      HTML_UPDATED :  'html_updated'
+      TICK                :  'tick'
+      UPDATE_HTML         :  'update_html'
+      HTML_UPDATED        :  'html_updated'
+      BOARD_BLOBS_LOADED  :  'board_blobs_loaded'
+      INITIALIZE_BLOBS    :  'initialize_blobs'
 
-    anchor:
+    html_anchors:
       BLOBS_SECTION: '#blobs-section'
 
+    TICK_WAIT_COUNT : 20
     TICK_TIME: 500
     NUM_OF_BLOBS: 20
     VP_WIDTH: Math.max(

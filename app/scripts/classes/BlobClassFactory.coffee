@@ -1,8 +1,7 @@
 define [
-  './AbstractBlobClass',
   './BasicBlobClass'
   '../helpers'
-], (AbstractBlob, BasicBlob, h) ->
+], (BasicBlob, h) ->
   hidden = do ->
     classTypes = [
       BasicBlob
@@ -22,4 +21,4 @@ define [
       new classType()
     else
       randomType = h.rand 0, hidden.typesArray.length
-      new inner.typesArray[randomType]()
+      new hidden.typesArray[randomType]()
