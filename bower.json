@@ -8,7 +8,9 @@
     "ionicons": "*",
     "bonzo": "*",
     "qwery": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "tweenlite": "*",
+    "tweenlite-css": "*"
 
   },
   "devDependencies": {}

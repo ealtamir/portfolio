@@ -1,10 +1,9 @@
 define [
   'lodash'
-  '../domHandler'
   '../eventAggregator'
   '../constants'
   '../helpers'
-], (_, $, eventAggregator, c, h) ->
+], (_, eventAggregator, c, h) ->
   class AbstractBlob
     @blobIdCount: 0
 
@@ -75,3 +74,17 @@ define [
     initBlob: ->
       console.log "Must be implemented by subclass"
       null
+
+    calcNextBlobPos: (x, y, radius) ->
+      correct_new_pos_found = no
+      count = 2
+      while not correct_new_pos_found and count > 0
+        angle = Math.random() * 2 * Math.PI
+        new_rad = h.rand(0, c.MAX_RADIUS)
+        new_x = x + Math.cos(angle) * new_rad
+        new_y = y + Math.sin(angle) * new_rad
+        if 0 < new_x < c.VP_WIDTH and 0 < new_y < c.VP_HEIGHT
+          correct_new_pos_found = yes
+        else
+          count -= 1
+      { x: new_x, y: new_y }

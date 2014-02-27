@@ -1,10 +1,11 @@
 define [
+  'tweenlite'
   'domHandler'
   'lodash'
   './eventAggregator'
   './constants'
   './helpers'
-], ($, _, eventAggregator, c, h) ->
+], (TweenLite, $, _, eventAggregator, c, h) ->
   class Renderer
     renderList: []
 
@@ -45,6 +46,11 @@ define [
 
     signalHTMLUpdated: ->
       eventAggregator.trigger c.events.HTML_UPDATED
+
+    updateBlob: (new_pos) ->
+      null
+
+
 
 
   # Singleton

@@ -27,6 +27,7 @@ define [
 
     tickAction: ->
       if @reduceTickCount() is 0
+        new_pos = @calcNextBlobPos()
         console.log "Handled blob #{@blobId}."
 
     initBlob: ->
