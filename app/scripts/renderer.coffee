@@ -33,8 +33,6 @@ define [
       renderStr = ""
       (renderStr += blob.html + '\n') for blob in @renderList
 
-      console.dir $blobs_zone
-
       $blobs_zone.append renderStr
 
       $("#blob-#{blob.id}").css(
@@ -47,11 +45,11 @@ define [
     signalHTMLUpdated: ->
       eventAggregator.trigger c.events.HTML_UPDATED
 
-    updateBlob: (new_pos) ->
-      null
-
-
-
+    updateBlob: (blobId, new_pos) ->
+      new TweenLite("#blob-#{blobId}", 2, {css: {
+        left: "#{new_pos.x}px"
+        top: "#{new_pos.y}px"
+      }, ease: "Power4.easeIn"})
 
   # Singleton
   if renderer? then renderer else (renderer = new Renderer())

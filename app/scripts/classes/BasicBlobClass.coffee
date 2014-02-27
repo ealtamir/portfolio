@@ -1,6 +1,6 @@
 define [
-  './AbstractBlobClass',
-  '../eventAggregator',
+  './AbstractBlobClass'
+  '../eventAggregator'
   '../helpers'
   '../constants'
   '../renderer'
@@ -27,8 +27,9 @@ define [
 
     tickAction: ->
       if @reduceTickCount() is 0
-        new_pos = @calcNextBlobPos()
-        console.log "Handled blob #{@blobId}."
+        old_pos = @getPos()
+        new_pos = @calcNextBlobPos old_pos.x, old_pos.y
+        renderer.updateBlob @blobId, new_pos
 
     initBlob: ->
       @listenTick()
