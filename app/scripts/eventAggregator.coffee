@@ -1,4 +1,4 @@
-define ['asEvented' ], (asE) ->
+define ['./asevented' ], (asE) ->
   Obj = ->
   asE.call Obj.prototype
 

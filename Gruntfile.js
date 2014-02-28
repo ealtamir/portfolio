@@ -172,6 +172,9 @@ module.exports = function (grunt) {
                     optimize: 'none',
                     paths: {
                         'templates': '../../.tmp/scripts/templates',
+                        'bonzo': '../../app/bower_components/bonzo/bonzo',
+                        'qwery': '../../app/bower_components/qwery/qwery',
+                        'lodash': '../../app/bower_components/lodash/dist/lodash',
                         //'jquery': '../../app/bower_components/jquery/jquery',
                         //'underscore': '../../app/bower_components/underscore/underscore',
                         //'backbone': '../../app/bower_components/backbone/backbone'
