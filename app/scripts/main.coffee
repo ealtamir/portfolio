@@ -16,9 +16,9 @@ require.config
     qwery: '../bower_components/qwery/qwery'
     bonzo: '../bower_components/bonzo/bonzo'
     lodash: '../bower_components/lodash/dist/lodash'
-    tweenlite: 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenLite.min'
-    ease: "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/easing/EasePack.min"
-    cssplugin: "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/plugins/CSSPlugin.min"
+    tweenlite: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenLite.min'
+    ease: "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/easing/EasePack.min"
+    cssplugin: "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/plugins/CSSPlugin.min"
 
 require [
   './eventMediator'
